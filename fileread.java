@@ -7,13 +7,13 @@ public class FileRead {
  
     public static void main(String a[]){
         BufferedReader br = null;
-        String strLine = ;
+        String strLine = "teja";
         try {
             br = new BufferedReader( new FileReader("/home/students/test.txt"));
             while( (strLine = br.readLine()) != null){
                 System.out.println(strLine);
             }
-            br.close()
+            br.close();
         } catch (FileNotFoundException e) {
             System.err.println("File not found");
         } catch (IOException e) {
